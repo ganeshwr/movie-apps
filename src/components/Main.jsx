@@ -61,6 +61,7 @@ const Main = () => {
     >
       <View>
         <TextInput
+          testID="search"
           placeholder="Search..."
           value={keyword}
           onChangeText={(text) => setKeyword(text)}
@@ -83,6 +84,7 @@ const Main = () => {
         </ScrollView>
       ) : (
         <Text
+          testID="not-found"
           style={{
             fontSize: 30,
             textAlign: "center",

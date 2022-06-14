@@ -26,7 +26,7 @@ Built using React Native EXPO
   - iOS: [Client iOS](https://itunes.apple.com/app/apple-store/id982107779)
   - Android: [Client Android](https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=blankexample)
   - Web: Any web browser
-- There is also an .apk file provided, to install directly in a device.
+- There is also an .apk file provided, to install directly in a device, please download it [here](https://expo.dev/artifacts/34c93a07-d487-4006-8289-0c9f2a08c9a8).
 
 <hr>
 

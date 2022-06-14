@@ -12,7 +12,8 @@
     "redux": "^4.2.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9"
+    "@babel/core": "^7.12.9",
+    "@testing-library/react-native": "^9.1.0"
   },
   "scripts": {
     "start": "expo start",
