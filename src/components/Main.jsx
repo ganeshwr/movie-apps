@@ -5,7 +5,7 @@ import * as React from "react";
 
 import MovieCard from "./MovieCard";
 
-import { fetchMovies } from "./api/index";
+import { fetchMovies } from "../api/index";
 
 const Main = () => {
   const [movies, setMovies] = useState({});
