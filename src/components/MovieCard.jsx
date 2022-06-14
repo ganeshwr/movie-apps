@@ -1,4 +1,4 @@
-import { View, Image, Text } from "react-native";
+import { View, Image } from "react-native";
 
 const imageUrl = "https://image.tmdb.org/t/p/w440_and_h660_face";
 
