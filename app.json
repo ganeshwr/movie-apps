@@ -1,0 +1,16 @@
+{
+  "expo": {
+    "name": "Movie Apps",
+    "icon": "./src/assets/cinema.png",
+    "version": "1.0.0",
+    "slug": "movie-apps",
+    "ios": {
+      "bundleIdentifier": "com.ganeshwr.movieapps",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.ganeshwr.movieapp",
+      "versionCode": 1
+    }
+  }
+}

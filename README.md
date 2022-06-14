@@ -1,3 +1,5 @@
+Icon by flaticon.com
+
 # My Universal React Project
 
 <p>
