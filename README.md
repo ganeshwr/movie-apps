@@ -1,6 +1,6 @@
-Icon by flaticon.com
+# Movie Apps
 
-# My Universal React Project
+Built using React Native EXPO
 
 <p>
   <!-- iOS -->
@@ -26,21 +26,24 @@ Icon by flaticon.com
   - iOS: [Client iOS](https://itunes.apple.com/app/apple-store/id982107779)
   - Android: [Client Android](https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=blankexample)
   - Web: Any web browser
+- There is also an .apk file provided, to install directly in a device.
 
-## Adding Native Code
+<hr>
 
-This project can be run from a web browser or the Expo client app. You may find that you want to add more native code later on. You can do this by ejecting the project and rebuilding it yourself.
+## Running on Android emulator
 
-- Run `yarn eject` to create the native projects.
-- You can still run your project in the web browser or Expo client, you just won't be able to access any new native modules you add.
+1. Start the emulator
+2. Make sure that "USB Debugging" is enabled
+3. Run `yarn run android`
 
-## Publishing
+## Running on Android/iOS Device
 
-- Deploy the native app to the App store and Play store using this guide: [Deployment](https://docs.expo.dev/distribution/app-stores/).
-- Deploy the website using this guide: [Web deployment](https://docs.expo.dev/distribution/publishing-websites/).
+1. Download Expo ([iOS](https://itunes.apple.com/app/apple-store/id982107779) or [Android](https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=blankexample))
+2. Connect both PC and device to same Wi-Fi network
+3. Run `yarn start`
+4. How to run:
 
-## 📝 Notes
-
-- Learn more about [Universal React](https://docs.expo.dev/).
-- See what API and components are [available in the React runtimes](https://docs.expo.dev/versions/latest/).
-- Find out more about developing apps and websites: [Guides](https://docs.expo.dev/guides/).
+- Android : Scan the barcode using Expo app
+- iOS : Scan the barcode using Camera app
+<hr>
+Icon by flaticon.com
