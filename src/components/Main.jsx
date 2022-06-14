@@ -2,13 +2,16 @@ import { ScrollView, View } from "react-native";
 import { useState, useEffect } from "react";
 import { TextInput, Text } from "react-native-paper";
 import * as React from "react";
+import { useSelector, useDispatch } from "react-redux";
 
 import MovieCard from "./MovieCard";
 
 import { fetchMovies } from "../api/index";
+import { setMovies } from "../store/movies/movies.action";
+import { selectMovies } from "../store/movies/movies.selector";
 
 const Main = () => {
-  const [movies, setMovies] = useState({});
+  const movies = useSelector(selectMovies);
   const [moviesResult, setMoviesResult] = useState([]);
   const [keyword, setKeyword] = useState("");
 
@@ -28,11 +31,13 @@ const Main = () => {
     }
   }, [keyword]);
 
+  const dispatch = useDispatch();
+
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await fetchMovies(1);
-        setMovies(response.data);
+        dispatch(setMovies(response.data));
       } catch (error) {
         console.error(error);
       }
@@ -69,6 +74,7 @@ const Main = () => {
             flexWrap: "wrap",
             justifyContent: "space-between",
             alignItems: "center",
+            paddingBottom: 30,
           }}
         >
           {moviesResult.map((el, idx) => {
